@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RORAssignment3</title>
+    <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <a href="http://www.website.com">This is the header</a>
+        <div class="HorizLinks">
+          <ul>
+            <li><a href="http://www.website.com">Header Link 1</a></li>
+            <li><a href="http://www.website.com">Header Link 2</a></li>
+            <li><a href="http://www.website.com">Header Link 3</a></li>
+            <li><a href="http://www.website.com">Header Link 4</a></li>
+          </ul>
+        </div>
+        <p>Header Text</p>
+        <p class="smalltext">Small Text</p>
+      </div>
+      <div id="horizontalnav">
+        <div class="navlinks">
+          <ul>
+            <li><a href="http://www.website.com">Nav Link 1</a></li>
+            <li><a href="http://www.website.com">Nav Link 2</a></li>
+            <li><a href="http://www.website.com">Nav Link 3</a></li>
+            <li><a href="http://www.website.com">Nav Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+      <div id="leftnav">This is the leftnav</div>
+      <div id="rightnav">This is the right nav</div>
+
+      <div id="body">
+        This is the body  <br>
+        <div class="box">
+          <h2>This is the title</h2>
+          Text inside the box
+        </div>
+      </div>
+
+      <%= yield %>
+
+      <div id="footer">This is the footer</div>
+    </div>
+  </body>
+</html>
