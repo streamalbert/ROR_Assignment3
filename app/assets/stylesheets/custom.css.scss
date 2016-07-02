@@ -6,7 +6,8 @@
   width: 900px;
   height: 100px;
   position: relative;
-  background-image: image-url("headerBG.jpg");
+  background-image: image-url("greenBG.jpg");
+  background-size: 900px 100px;
   border-bottom: 2px solid #000000;
   a {
     color: #ffffff;
@@ -88,6 +89,15 @@
   height: 400px;
   background-color: #F8AA3C;
   border-right: 1px dashed #694717;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    display: block;
+    width: 140px;
+  }
 }
     
 #rightnav {
@@ -96,6 +106,15 @@
   height: 400px;
   background-color: #F8AA3C;
   border-left: 1px dashed #694717;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    display: block;
+    width: 140px;
+  }
 }
 
 #body {
@@ -107,6 +126,7 @@
 #footer {
   clear: both;
   background-color: #D1C0A7;
+  text-align: center;
 }
 
 .box {
