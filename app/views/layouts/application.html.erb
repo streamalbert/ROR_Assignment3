@@ -12,11 +12,13 @@
       <div id="header">
         <div class="HorizLinks">
           <ul>
-            <li><%= link_to "Home", root_path %></li>
-            <li><%= link_to "About", about_path %></li>
-            <li><a href="http://www.website.com">Header Link 2</a></li>
-            <li><a href="http://www.website.com">Header Link 3</a></li>
-            <li><a href="http://www.website.com">Header Link 4</a></li>
+            <li><%= link_to "HOME", root_path %></li>
+            <li style="margin-right: 50px;margin-left: 50px">|</li>
+            <li><%= link_to "ABOUT", about_path %></li>
+            <li style="margin-right: 50px;margin-left: 50px">|</li>
+            <li><%= link_to "CONTACT", contact_path %></li>
+            <li style="margin-right: 50px;margin-left: 50px">|</li>
+            <li style="margin-right: 40px;"><%= link_to "TERMS", terms_path %></li>
           </ul>
         </div>
         <p>Ruby on Rails Assignment 3 - Meng Xie 89552</p>
@@ -24,27 +26,25 @@
       <div id="horizontalnav">
         <div class="navlinks">
           <ul>
-            <li><a href="http://www.website.com">Nav Link 1</a></li>
-            <li><a href="http://www.website.com">Nav Link 2</a></li>
-            <li><a href="http://www.website.com">Nav Link 3</a></li>
-            <li><a href="http://www.website.com">Nav Link 4</a></li>
+            <li style="margin-right: 100px"><%= link_to "Portfolio", portfolio_path %></li>
+            <li style="margin-right: 60px"><%= link_to "Experience", experience_path %></li>
           </ul>
         </div>
       </div>
       <div id="leftnav">
         <ul>
-          <li><a href="http://www.website.com">Left Nav Link 1</a></li>
-          <li><a href="http://www.website.com">Left Nav Link 2</a></li>
-          <li><a href="http://www.website.com">Left Nav Link 3</a></li>
-          <li><a href="http://www.website.com">Left Nav Link 4</a></li>
+          <li>Social Network</li></br>
+          <li><hr></li>
+          <li><%= link_to "Facebook", facebook_path %></li>
+          <li><%= link_to "Linkedin", linkedin_path %></li>
         </ul>
       </div>
       <div id="rightnav">
         <ul>
-          <li><a href="http://www.website.com">Right Nav Link 1</a></li>
-          <li><a href="http://www.website.com">Right Nav Link 2</a></li>
-          <li><a href="http://www.website.com">Right Nav Link 3</a></li>
-          <li><a href="http://www.website.com">Right Nav Link 4</a></li>
+          <li>Attachments</li></br>
+          <li><hr></li>
+          <li><%= link_to "Resume", resume_path %></li>
+          <li><%= link_to "Portrait", portrait_path %></li>
         </ul>
       </div>
 
