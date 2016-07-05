@@ -1,5 +1,6 @@
 #container {
   width: 100%;
+  height: 100%;
 }
 
 #header {
@@ -96,7 +97,8 @@
 #leftnav {
   float: left;
   width: 150px;
-  height: 480px;
+  position: absolute;
+  height: 69%;
   background-color: #FFC0A9;
   border-right: 0px dashed #694717;
   color: #fff;
@@ -134,7 +136,9 @@
 #rightnav {
   float: right;
   width: 150px;
-  height: 480px;
+  position: absolute;
+  height: 69%;
+  right: 0px;
   background-color: #FFC0A9;
   border-left: 0px dashed #694717;
   color: #fff;
@@ -182,6 +186,9 @@
   font-family: Verdana;
   padding-top: 20px;
   color: #fff;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
 
 .box {
