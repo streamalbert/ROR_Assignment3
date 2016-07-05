@@ -10,13 +10,13 @@
   <body>
     <div id="container">
       <div id="header">
-        <a href="http://www.weichuantian.com">Author: Weichuan Tian</a>
+        <a href="http://www.weichuantian.com" target="_blank">Author: Weichuan Tian</a>
         <div class="HorizLinks">
           <ul>
-            <li><a href="http://www.website.com">Header Link 1</a></li>
-            <li><a href="http://www.website.com">Header Link 2</a></li>
-            <li><a href="http://www.website.com">Header Link 3</a></li>
-            <li><a href="http://www.website.com">Header Link 4</a></li>
+            <li><%= link_to 'Home', root_path %></li>
+            <li><%= link_to 'Contact', contact_path %></li>
+            <li><%= link_to 'About', about_path %></li>
+            <li><%= link_to 'Terms', terms_path %></li>
           </ul>
         </div>
         <p>Simple Navigation</p>
@@ -25,37 +25,22 @@
       <div id="horizontalnav">
         <div class="navlinks">
           <ul>
-            <li><a href="http://www.website.com">Nav Link 1</a></li>
-            <li><a href="http://www.website.com">Nav Link 2</a></li>
-            <li><a href="http://www.website.com">Nav Link 3</a></li>
-            <li><a href="http://www.website.com">Nav Link 4</a></li>
+            <li><%= link_to 'Convert 1001', demo1_path %></li>
+            <li><%= link_to 'Convert 101', demo2_path %></li>
+            <li><%= link_to 'Convert 11001', demo3_path %></li>
+            <li><%= link_to 'Convert 10101', demo4_path %></li>
           </ul>
         </div>
       </div>
       <div id="leftnav">
         <ul>
-          <li><a href="http://www.website.com">Left Nav Link 1</a></li>
-          <li><a href="http://www.website.com">Left Nav Link 2</a></li>
-          <li><a href="http://www.website.com">Left Nav Link 3</a></li>
-          <li><a href="http://www.website.com">Left Nav Link 4</a></li>
+          <li><%= link_to 'Facebook', facebook_path %></li>
         </ul>
       </div>
       <div id="rightnav">
         <ul>
-          <li><a href="http://www.website.com">Right Nav Link 1</a></li>
-          <li><a href="http://www.website.com">Right Nav Link 2</a></li>
-          <li><a href="http://www.website.com">Right Nav Link 3</a></li>
-          <li><a href="http://www.website.com">Right Nav Link 4</a></li>
-          <li><%= link_to 'Binary to Decimal', converter_path %></li>
+          <li><%= link_to 'LinkedIn', linkedIn_path %></li>
         </ul>
-      </div>
-
-      <div id="body">
-        This is the body  <br>
-        <div class="box">
-          <h2>This is the title</h2>
-          Text inside the box
-        </div>
       </div>
 
       <%= yield %>
