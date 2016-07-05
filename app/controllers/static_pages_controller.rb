@@ -30,4 +30,7 @@ class StaticPagesController < ApplicationController
   def portrait
   end
 
+  def converter
+  end
+
 end

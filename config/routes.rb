@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  
   get 'static_pages/home'
   get 'about' => 'static_pages#about'
   get 'contact' => 'static_pages#contact'
@@ -9,5 +10,7 @@ Rails.application.routes.draw do
   get 'linkedin' => 'static_pages#linkedin'
   get 'resume' => 'static_pages#resume'
   get 'portrait' => 'static_pages#portrait'
+  get 'converter' => 'static_pages#converter'
+
   root 'static_pages#home'
 end
